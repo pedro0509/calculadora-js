@@ -1,0 +1,36 @@
+.calculator {
+    width: 100%;
+    max-width: 300px;
+}
+
+.display {
+    min-height: 80px;
+}
+
+.btn-dark {
+    background-color: #333;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #444;
+    color: white
+}
+
+.btn-warning {
+    background-color: #ff9500;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #ffaa33;
+    color: white;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.current-operand{
+    min-height: 32px;
+}
