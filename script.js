@@ -37,6 +37,34 @@ class Calculator {
             this.previusOperandElement.innerText = '';
         }
     }
+
+    chooseOperation(operation) {
+        if (this.operation === '') {
+            return;
+        }
+        if(this.currentOperand === ''){
+            return;
+        }
+        if(this.previusOperand !== ''){
+            this.compute();
+        }
+
+        this.operation = operation;
+        this.previusOperand = this.previusOperand;
+        this.currentOperand = '';
+    }
+
+    compute() {
+        const prev = parseFloat(this.previusOperand);
+        const current = parseFloat(this.currentOperand);
+
+        if (!isNaN(prev)) {
+            return
+        }
+
+
+
+    }
 }
 
 const numberButtons = document.querySelectorAll('[data-number]');
